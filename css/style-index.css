@@ -1,0 +1,172 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --navyblue: #2e2f42;
+  --cornflower: #e7e9fc;
+  --iris: #4d5ae5;
+  --cloud: #f4f4fd;
+  --ocean: #404bbf;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--navyblue, #2e2f42);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.logo {
+  display: inline-flex;
+  font-size: 18px;
+  font-family: Raleway;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.web-logo {
+  color: var(--iris, #4d5ae5);
+  font-size: 18px;
+  font-family: Raleway;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.menu-link {
+  color: var(--navyblue, #2e2f42);
+  font-weight: 500;
+}
+
+.menu-link.active-link {
+  color: var(--ocean);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--ocean);
+  cursor: pointer;
+}
+
+.menu-right {
+  color: var(--slate, #434455);
+}
+
+.menu-right:hover,
+.menu-right:focus {
+  color: var(--ocean);
+  cursor: pointer;
+}
+
+.hero-section {
+  background: var(--navyblue, #2e2f42);
+}
+
+.heading-text {
+  color: var(--white, #fff);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 1.12px;
+}
+
+.button-order-service {
+  border-radius: 4px;
+  background: var(--iris, #4d5ae5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  color: var(--white, #fff);
+  font-weight: 500;
+  letter-spacing: 0.64px;
+  cursor: pointer;
+  border: 1px solid var(--ocean, #404bbf);
+}
+
+.button-order-service:hover {
+  border-radius: 4px;
+  background: var(--ocean, #404bbf);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--ocean, #404bbf);
+}
+
+.benefit-title {
+  color: var(--navyblue, #2e2f42);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+.benefit-description {
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.section-title {
+  color: var(--navyblue, #2e2f42);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+.team-members-name {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+footer {
+  background: var(--navyblue, #2e2f42);
+  align-items: center;
+}
+
+.logo-footer {
+  display: inline-flex;
+  height: 24px;
+  align-items: center;
+
+  color: var(--cloud, #f4f4fd);
+  font-size: 18px;
+  font-family: Raleway;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.web-logo-footer {
+  color: var(--iris, #4d5ae5);
+  font-size: 18px;
+  font-family: Raleway;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+.p-footer {
+  color: var(--cloud, #f4f4fd);
+  /* Body */
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+}
