@@ -1,14 +1,18 @@
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
+/* Css Variable */
 :root {
   --white: #fff;
   --navyblue: #2e2f42;
   --cornflower: #e7e9fc;
   --iris: #4d5ae5;
   --ocean: #404bbf;
+}
+
+/* Global Reset */
+p,
+h3,
+ul {
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -22,18 +26,41 @@ body {
   letter-spacing: 0.64px;
 }
 
+/* Container */
+.container {
+  width: 1158px;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Top Line */
+.header {
+  display: flex;
+  width: 1440px;
+  height: 72px;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  border-bottom: 1px solid var(--cornflower, #e7e9fc);
+  background: var(--white, #fff);
+}
+
+/* Logo */
 .logo {
   display: inline-flex;
   height: 24px;
   align-items: center;
-
-  color: var(--navyblue, #2e2f42);
-  font-size: 18px;
-  font-family: Raleway;
-  font-weight: 800;
-  line-height: 21px;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
+  flex-shrink: 0;
   text-decoration: none;
 }
 
@@ -47,12 +74,23 @@ body {
   text-transform: uppercase;
 }
 
-.list {
-  list-style: none;
+.studio-logo {
+  color: var(--navyblue, #2e2f42);
+  font-size: 18px;
+  font-family: Raleway;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-.link {
-  text-decoration: none;
+/* Navbar */
+.menu {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-left: 76px;
 }
 
 .menu-link {
@@ -71,15 +109,37 @@ body {
   color: var(--ocean);
 }
 
+/* Menu Right */
 .menu-right {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 40px;
+}
+
+.menu-right-item {
   color: var(--slate, #434455);
   font-weight: 400;
   letter-spacing: 0.32px;
 }
 
-.menu-right:hover,
-.menu-right:focus {
+.menu-right-item:hover,
+.menu-right-item:focus {
   color: var(--ocean);
+}
+
+.menu-right-item:hover,
+.menu-right-item:focus {
+  color: var(--ocean);
+}
+
+/* Buttons */
+.button-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
 }
 
 .filter-button {
@@ -96,6 +156,11 @@ body {
   line-height: 24px;
   letter-spacing: 0.64px;
   cursor: pointer;
+
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
 }
 
 .filter-button.filter-active {
@@ -116,10 +181,55 @@ body {
   border: 1px solid var(--ocean, #404bbf);
 }
 
+/* Section */
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Cards */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-list {
+  display: flex;
+  width: 360px;
+  height: 420px;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex-shrink: 0;
+
+  border: 1px solid var(--cornflower, #e7e9fc);
+  background: var(--white, #fff);
+
+  margin-right: 24px;
+  margin-bottom: 48px;
+}
+
+.card-image {
+  width: 360px;
+  height: 300px;
+  flex-shrink: 0;
+}
+
+.card-content {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 .card-title {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.4px;
+  margin: 0px;
 }
 
 .card-description {
@@ -129,33 +239,53 @@ body {
   letter-spacing: 0.32px;
 }
 
-footer {
+.footer {
+  width: 1440px;
+  height: 312px;
   flex-shrink: 0;
+
   background: var(--navyblue, #2e2f42);
-  align-items: center;
 }
 
+/* Footer */
 .logo-footer {
-  display: inline-flex;
+  display: flex;
+
   height: 24px;
   align-items: center;
   flex-shrink: 0;
+  text-decoration: none;
+  margin-left: 156px;
+  margin-bottom: 16px;
+}
 
-  color: var(--cloud, #f4f4fd);
-  font-size: 18px;
+.web-logo-footer {
+  display: flex;
+  width: 44px;
+  height: 21px;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  color: var(--iris, #4d5ae5);
   font-family: Raleway;
+  font-size: 18px;
   font-style: normal;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
-.web-logo-footer {
-  color: var(--iris, #4d5ae5);
-  font-size: 18px;
+.studio-logo-footer {
+  display: flex;
+  width: 71px;
+  height: 21px;
+  flex-direction: column;
+  justify-content: center;
+
+  color: var(--cloud, #f4f4fd);
   font-family: Raleway;
+  font-size: 18px;
   font-style: normal;
   font-weight: 800;
   line-height: 21px;
@@ -170,4 +300,5 @@ footer {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.32px;
+  margin-left: 156px;
 }

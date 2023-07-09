@@ -1,8 +1,4 @@
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
+/* CSS Variables */
 :root {
   --navyblue: #2e2f42;
   --cornflower: #e7e9fc;
@@ -11,6 +7,16 @@
   --ocean: #404bbf;
 }
 
+/* Global Reset */
+p,
+h1,
+h3,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Body */
 body {
   font-family: "Roboto", sans-serif;
   color: var(--navyblue, #2e2f42);
@@ -21,14 +27,49 @@ body {
   letter-spacing: 0.32px;
 }
 
+/* Container */
+.container {
+  width: 1158px;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Top Line Header*/
+.header {
+  display: flex;
+  width: 1440px;
+  height: 72px;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  border-bottom: 1px solid var(--cornflower, #e7e9fc);
+  background: var(--white, #fff);
+}
+
+/* Logo */
 .logo {
   display: inline-flex;
-  font-size: 18px;
-  font-family: Raleway;
-  font-weight: 800;
-  line-height: 21px;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
+  height: 24px;
+  align-items: center;
+  flex-shrink: 0;
   text-decoration: none;
 }
 
@@ -42,41 +83,76 @@ body {
   text-transform: uppercase;
 }
 
-.link {
+.studio-logo {
+  color: var(--navyblue, #2e2f42);
+  font-size: 18px;
+  font-family: Raleway;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
-.list {
-  list-style: none;
+/* Navbar */
+.menu {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-left: 76px;
 }
 
 .menu-link {
   color: var(--navyblue, #2e2f42);
+  font-size: 16px;
   font-weight: 500;
+  letter-spacing: 0.32px;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--ocean);
 }
 
 .menu-link.active-link {
   color: var(--ocean);
 }
 
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--ocean);
-  cursor: pointer;
-}
-
+/* Menu Right */
 .menu-right {
-  color: var(--slate, #434455);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 40px;
 }
 
-.menu-right:hover,
-.menu-right:focus {
+.menu-right-item {
+  color: var(--slate, #434455);
+  font-weight: 400;
+  letter-spacing: 0.32px;
+}
+
+.menu-right-item:hover,
+.menu-right-item:focus {
   color: var(--ocean);
-  cursor: pointer;
+}
+
+.menu-right-item:hover,
+.menu-right-item:focus {
+  color: var(--ocean);
 }
 
 .hero-section {
   background: var(--navyblue, #2e2f42);
+
+  width: 1440px;
+  height: 600px;
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .heading-text {
@@ -97,6 +173,12 @@ body {
   letter-spacing: 0.64px;
   cursor: pointer;
   border: 1px solid var(--ocean, #404bbf);
+
+  display: flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 48px;
 }
 
 .button-order-service:hover {
@@ -106,16 +188,61 @@ body {
   border: 1px solid var(--ocean, #404bbf);
 }
 
-.benefit-title {
-  color: var(--navyblue, #2e2f42);
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.4px;
+/* Benefits Section */
+.benefit-section {
+  display: flex;
+  justify-content: center;
+
+  width: 1128px;
+  height: 104px;
+  flex-shrink: 0;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.benefits-item {
+  display: flex;
+  width: 264px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  margin-right: 24px;
 }
 
 .benefit-description {
   font-weight: 400;
   line-height: 24px;
+}
+
+/* What we Doin */
+.what-doin-text {
+  margin-top: 120px;
+}
+
+.what-we-do {
+  display: flex;
+  justify-content: center;
+}
+.what-we-do-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-right: 24px;
+}
+
+/* Our Team */
+.our-team-section {
+  width: 1440px;
+  height: 732px;
+  flex-shrink: 0;
+  background: var(--cloud, #f4f4fd);
+  margin-top: 240px;
 }
 
 .section-title {
@@ -125,6 +252,43 @@ body {
   line-height: 40px;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+
+  display: flex;
+  justify-content: center;
+}
+.our-team-section-title {
+  margin-bottom: 72px;
+}
+.team-members {
+  display: flex;
+  justify-content: center;
+}
+
+.team-members-list {
+  margin-right: 24px;
+
+  display: inline-flex;
+  padding-bottom: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.card-content {
+  display: flex;
+  width: 232px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  padding: 32px 32px;
 }
 
 .team-members-name {
@@ -133,30 +297,54 @@ body {
   letter-spacing: 0.4px;
 }
 
-footer {
-  background: var(--navyblue, #2e2f42);
-  align-items: center;
-}
+/* Footer */
 
+.footer {
+  width: 1440px;
+  height: 312px;
+  flex-shrink: 0;
+
+  background: var(--navyblue, #2e2f42);
+}
 .logo-footer {
-  display: inline-flex;
+  display: flex;
+
   height: 24px;
   align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  margin-left: 156px;
+  margin-bottom: 16px;
+}
 
-  color: var(--cloud, #f4f4fd);
-  font-size: 18px;
+.web-logo-footer {
+  display: flex;
+  width: 44px;
+  height: 21px;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  color: var(--iris, #4d5ae5);
   font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
-.web-logo-footer {
-  color: var(--iris, #4d5ae5);
-  font-size: 18px;
+.studio-logo-footer {
+  display: flex;
+  width: 71px;
+  height: 21px;
+  flex-direction: column;
+  justify-content: center;
+
+  color: var(--cloud, #f4f4fd);
   font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.54px;
@@ -166,7 +354,9 @@ footer {
 .p-footer {
   color: var(--cloud, #f4f4fd);
   /* Body */
-  font-size: 16px;
+
+  font-style: normal;
   font-weight: 400;
   letter-spacing: 0.32px;
+  margin-left: 156px;
 }

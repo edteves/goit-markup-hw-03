@@ -11,15 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <title>Portfolio</title>
   </head>
   <body>
     <!--Navigation-->
-    <header>
+    <header class="header container">
       <nav>
         <a href="./index.html" class="logo">
-          <span class="web-logo">WEB</span>STUDIO
+          <span class="web-logo">WEB</span
+          ><span class="studio-logo">STUDIO</span>
         </a>
 
         <ul class="menu list">
@@ -38,13 +40,13 @@
       </nav>
 
       <ul class="menu-right list">
-        <li class="menu-right-item">
-          <a href="mailto:info@devstudio.com" class="menu-right link"
+        <li>
+          <a href="mailto:info@devstudio.com" class="menu-right-item link"
             >info@devstudio.com</a
           >
         </li>
-        <li class="menu-right-item">
-          <a href="tel:+11(000)111-11-11" class="menu-right link"
+        <li>
+          <a href="tel:+11(000)111-11-11" class="menu-right-item link"
             >+11(000)111-11-11</a
           >
         </li>
@@ -52,7 +54,7 @@
     </header>
 
     <main>
-      <section class="section">
+      <section class="section container">
         <ul class="button-list list">
           <li class="button-item">
             <button type="button" class="filter-button filter-active">
@@ -75,9 +77,17 @@
 
         <ul class="cards list">
           <li class="card-list">
-            <img src="./images/banking-app.jpg" alt="Banking App" width="360" />
-            <h3 class="card-title">Banking App Interface Concept</h3>
-            <p class="card-description">App</p>
+            <img
+              src="./images/banking-app.jpg"
+              alt="Banking App"
+              width="360"
+              height="300"
+              class="card-image"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Banking App Interface Concept</h3>
+              <p class="card-description">App</p>
+            </div>
           </li>
 
           <li class="card-list">
@@ -85,9 +95,13 @@
               src="./images/cashless-payment.jpg"
               alt="Cashless Payment"
               width="360"
+              height="300"
+              class="card-image"
             />
-            <h3 class="card-title">Cashless Payment</h3>
-            <p class="card-description">Marketing</p>
+            <div class="card-content">
+              <h3 class="card-title">Cashless Payment</h3>
+              <p class="card-description">Marketing</p>
+            </div>
           </li>
 
           <li class="card-list">
@@ -96,8 +110,10 @@
               alt="Meditation App"
               width="360"
             />
-            <h3 class="card-title">Meditation App</h3>
-            <p class="card-description">App</p>
+            <div class="card-content">
+              <h3 class="card-title">Meditation App</h3>
+              <p class="card-description">App</p>
+            </div>
           </li>
 
           <li class="card-list">
@@ -106,8 +122,10 @@
               alt="Taxi Service"
               width="360"
             />
-            <h3 class="card-title">Taxi Service</h3>
-            <p class="card-description">Marketing</p>
+            <div class="card-content">
+              <h3 class="card-title">Taxi Service</h3>
+              <p class="card-description">Marketing</p>
+            </div>
           </li>
 
           <li class="card-list">
@@ -116,8 +134,10 @@
               alt="Screen Illustrations"
               width="360"
             />
-            <h3 class="card-title">Screen Illustrations</h3>
-            <p class="card-description">Design</p>
+            <div class="card-content">
+              <h3 class="card-title">Screen Illustrations</h3>
+              <p class="card-description">Design</p>
+            </div>
           </li>
 
           <li class="card-list">
@@ -126,8 +146,10 @@
               alt="Online Courses"
               width="360"
             />
-            <h3 class="card-title">Online Courses</h3>
-            <p class="card-description">Marketing</p>
+            <div class="card-content">
+              <h3 class="card-title">Online Courses</h3>
+              <p class="card-description">Marketing</p>
+            </div>
           </li>
 
           <li class="card-list">
@@ -136,8 +158,10 @@
               alt="Instagram Storires"
               width="360"
             />
-            <h3 class="card-title">Instagram Stories Concept</h3>
-            <p class="card-description">Design</p>
+            <div class="card-content">
+              <h3 class="card-title">Instagram Stories Concept</h3>
+              <p class="card-description">Design</p>
+            </div>
           </li>
 
           <li class="card-list">
@@ -146,8 +170,10 @@
               alt="Organic Food"
               width="360"
             />
-            <h3 class="card-title">Organic Food</h3>
-            <p class="card-description">Web Site</p>
+            <div class="card-content">
+              <h3 class="card-title">Organic Food</h3>
+              <p class="card-description">Web Site</p>
+            </div>
           </li>
 
           <li class="card-list">
@@ -156,22 +182,27 @@
               alt="Fresh Coffee"
               width="360"
             />
-            <h3 class="card-title">Fresh Coffee</h3>
-            <p class="card-description">Web Site</p>
+            <div class="card-content">
+              <h3 class="card-title">Fresh Coffee</h3>
+              <p class="card-description">Web Site</p>
+            </div>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer class="footer">
-      <a href="./index.html" class="logo-footer">
-        <span class="web-logo-footer">Web</span>Studio
-      </a>
-      <p class="p-footer">
-        Increase the flow of customers and<br />
-        sales for your business with digital<br />
-        marketing & growth solutions.
-      </p>
+    <footer class="footer section">
+      <div class="container">
+        <a href="./index.html" class="logo-footer">
+          <span class="web-logo-footer">WEB</span
+          ><span class="studio-logo-footer">STUDIO</span>
+        </a>
+        <p class="p-footer">
+          Increase the flow of customers and<br />
+          sales for your business with digital<br />
+          marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

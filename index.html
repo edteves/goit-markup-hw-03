@@ -10,14 +10,16 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style-index.css" />
+    <link rel="stylesheet" href="./css/style-index.css" />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <title>Web Studio</title>
   </head>
   <body>
-    <header>
+    <header class="header container">
       <nav>
         <a href="./index.html" class="logo">
-          <span class="web-logo">WEB</span>STUDIO
+          <span class="web-logo">WEB</span
+          ><span class="studio-logo">STUDIO</span>
         </a>
 
         <ul class="menu list">
@@ -34,20 +36,20 @@
       </nav>
 
       <ul class="menu-right list">
-        <li class="menu-right-item">
-          <a href="mailto:info@devstudio.com" class="menu-right link"
+        <li>
+          <a href="mailto:info@devstudio.com" class="menu-right-item link"
             >info@devstudio.com</a
           >
         </li>
-        <li class="menu-right-item">
-          <a href="tel:+11(000)111-11-11" class="menu-right link"
+        <li>
+          <a href="tel:+11(000)111-11-11" class="menu-right-item link"
             >+11(000)111-11-11</a
           >
         </li>
       </ul>
     </header>
     <main>
-      <section class="hero-section">
+      <section class="hero-section section">
         <h1 class="heading-text">
           Effective Solutions<br />
           for Your Business
@@ -60,8 +62,9 @@
           Order Service
         </button>
       </section>
+
       <!--Benefits-->
-      <section>
+      <section class="benefit-section section">
         <ul class="benefits list">
           <li class="benefits-item">
             <h3 class="benefit-title">Strategy</h3>
@@ -94,8 +97,8 @@
         </ul>
       </section>
 
-      <section class="section">
-        <h2 class="section-title">What Are We Doing</h2>
+      <section class="what-are-we-doin-section section">
+        <h2 class="section-title what-doin-text">What Are We Doing</h2>
         <ul class="what-we-do list">
           <li class="what-we-do-item">
             <img
@@ -127,8 +130,8 @@
       </section>
 
       <!--Our Team-->
-      <section class="section">
-        <h2 class="section-title">Our Team</h2>
+      <section class="our-team-section section">
+        <h2 class="our-team-section-title section-title">Our Team</h2>
 
         <ul class="team-members list">
           <li class="team-members-list">
@@ -138,7 +141,7 @@
               alt="mark"
               class="mark-photo"
             />
-            <div>
+            <div class="card-content">
               <h3 class="team-members-name">Mark Guerrero</h3>
               <p class="team-members-role">Product Designer</p>
             </div>
@@ -146,7 +149,7 @@
 
           <li class="team-members-list">
             <img src="images/tom.jpg" width="264" alt="tom" class="tom-photo" />
-            <div>
+            <div class="card-content">
               <h3 class="team-members-name">Tom Ford</h3>
               <p class="team-members-role">Frontend Developer</p>
             </div>
@@ -159,7 +162,7 @@
               alt="camilla"
               class="camilla-photo"
             />
-            <div>
+            <div class="card-content">
               <h3 class="team-members-name">Camilla Garcia</h3>
               <p class="team-members-role">Marketing</p>
             </div>
@@ -172,7 +175,7 @@
               alt="daniel"
               class="daniel-photo"
             />
-            <div>
+            <div class="card-content">
               <h3 class="team-members-name">Daniel Wilson</h3>
               <p class="team-members-role">UI Designer</p>
             </div>
@@ -181,15 +184,18 @@
       </section>
     </main>
     <!--Footer-->
-    <footer class="footer">
-      <a href="./index.html" class="logo-footer">
-        <span class="web-logo-footer">Web</span>Studio
-      </a>
-      <p class="p-footer">
-        Increase the flow of customers and<br />
-        sales for your business with digital<br />
-        marketing & growth solutions.
-      </p>
+    <footer class="footer section">
+      <div class="container">
+        <a href="./index.html" class="logo-footer">
+          <span class="web-logo-footer">WEB</span
+          ><span class="studio-logo-footer">STUDIO</span>
+        </a>
+        <p class="p-footer">
+          Increase the flow of customers and<br />
+          sales for your business with digital<br />
+          marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
