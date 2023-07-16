@@ -1,12 +1,11 @@
-/* Css Variable */
 :root {
   --cloud: #f4f4fd;
   --cornflower: #e7e9fc;
   --iris: #4d5ae5;
   --navyblue: #2e2f42;
-  --ocean: #404bbf;
   --slate: #434455;
   --white: #ffffff;
+  --ocean: #404bbf;
 }
 
 * {
@@ -37,6 +36,8 @@ ul {
 
 .container {
   width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -45,13 +46,37 @@ ul {
   padding-bottom: 120px;
 }
 
+/* Body */
+/* body {
+  font-family: "Roboto", sans-serif;
+  color: var(--navyblue, #2e2f42);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+} */
+
 body {
   color: var(--navyblue, #2e2f42);
-  font-family: "Roboto", sans-serif;
+
+  /* Body Medium */
+  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.32px;
+}
+
+.section-title {
+  text-align: center;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .header-container {
@@ -100,7 +125,6 @@ body {
 
 .menu-link {
   color: var(--navyblue, #2e2f42);
-  letter-spacing: 0.32px;
 }
 
 .menu-link:hover,
@@ -128,18 +152,6 @@ body {
 .menu-right-item:hover,
 .menu-right-item:focus {
   color: var(--ocean);
-}
-
-/* ------------------------------------------- Studio --------------------------------------- */
-.section-title {
-  text-align: center;
-
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
-  margin-bottom: 72px;
 }
 
 .hero-section {
@@ -254,6 +266,10 @@ body {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+.team-members-item {
+  width: calc(100% - 24px / 3);
+}
+
 .team-members {
   gap: 24px;
 }
@@ -281,91 +297,7 @@ body {
   padding: 32px 32px;
 }
 /* End of our team section */
-/* ------------------------------------------- Studio --------------------------------------- */
 
-/* ------------------------------------------- Portfolio --------------------------------------- */
-.button-list {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  margin-bottom: 72px;
-}
-
-.filter-button {
-  border-radius: 4px;
-  border: 1px solid var(--cornflower, #e7e9fc);
-  background: var(--cloud, #f4f4fd);
-
-  color: var(--iris, #4d5ae5);
-
-  /* Button Text */
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.64px;
-  cursor: pointer;
-
-  padding: 12px 24px;
-  justify-content: center;
-  align-items: center;
-}
-
-.filter-button.filter-active {
-  background: var(--ocean, #404bbf);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-  color: var(--white, #fff);
-  border: 1px solid var(--ocean, #404bbf);
-}
-
-.filter-button:hover,
-.filter-button:focus {
-  border-radius: 4px;
-  background: var(--ocean, #404bbf);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-  color: var(--white, #fff);
-  border: 1px solid var(--ocean, #404bbf);
-}
-
-.portfolio {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-
-.card-item {
-  display: flex;
-  height: 420px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  border: 1px solid var(--cornflower, #e7e9fc);
-  background: var(--white, #fff);
-  margin-bottom: 48px;
-}
-
-.card-content {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.card-title {
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.4px;
-  margin: 0px;
-}
-
-.card-description {
-  color: var(--slate, #434455);
-
-  font-weight: 400;
-  letter-spacing: 0.32px;
-}
-
-/* Footer Section */
 .footer-section {
   background: var(--navyblue, #2e2f42);
 }
