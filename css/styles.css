@@ -57,7 +57,6 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  width: 1440;
   height: 72px;
   border-bottom: 1px solid var(--cornflower, #e7e9fc);
   background: var(--white, #fff);
@@ -223,11 +222,6 @@ body {
 /* End of Benefits Section */
 
 /* What Are we doing Section */
-.what-are-we-doing-container {
-  width: 1128px;
-  height: 412px;
-}
-
 .what-we-do-item {
   display: flex;
 }
